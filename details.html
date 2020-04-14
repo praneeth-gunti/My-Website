@@ -1,46 +1,98 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Contact</title>
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
 
-    <h2>Contact Address</h2>
-    <strong>Email:</strong>Praneeth.gunti@gmail.com <br>
-    <!-- <strong>Phone:  </strong> +917093374197 <br> -->
-    <strong>Country:</strong>India <br><br>
-    <h4>Fill up the form</h4>
-    <form action="mailto:praneth.gunti@gmail.com" method="post" enctype="text/plain">
-      <table cellspacing = "5">
-        <tr>
-          <td><label> Your Name: </label></td>
-          <td><input type="text" name="Name" value=""></td>
-        </tr>
-        <tr>
-          <td><label> Date of Birth:</label></td>
-          <td><input type="date" name="DOB" value=""></td>
-        </tr>
-        <tr>
-          <td><label>Upload Your Resume:</label></td>
-          <td><input type="file" name="Resume" value="Choose a file"></td>
-        </tr>
-        <tr>
-          <td><label>Email:</label></td>
-          <td><input type="email" name="Email" value=""></td>
-        </tr>
-        <tr>
-          <td><label> Enter Your Message:</label></td>
-          <td><textarea name="name" rows="8" cols="50"></textarea></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td><input type="submit" name="" value="Submit"></td>
-        </tr>
-      </table>
+<head>
+  <meta charset="utf-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="header">
+    <strong>
+      <a class="header-link" href="index.html">About</a>
+      <a class="header-link" href="hobbies.html">Hobbies</a>
+      <a class="header-link" href="">Gallery</a>
+      <a class="header-link" href="">Play Games</a>
+      <a class="header-link" href="">Projects</a>
+      <a class="header-link" href="details.html">Message</a>
+    </strong>
+  </div>
+
+  <div class="form_table">
+    <h3>Fill-up the form</h3>
+    <form action="mailto:praneeth.gunti@gmail.com" method= "post" enctype="text/plain">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email</label>
+        </div>
+        <div class="col-75">
+          <input type="email" id="email" name="email" placeholder="Your email..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="dob">Date of birth</label>
+        </div>
+        <div class="col-75">
+          <input type="date" id="dob" name="dob" placeholder="Select your DOB...">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Country</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="india">India</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            <option value="australia">Australia</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Message</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Share your thoughts.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
     </form>
+  </div>
 
-    <a href="index.html">Back to <strong>index</strong></a>
-  </body>
+  <h2>Contact Address</h2>
+  <p><strong>Email:</strong> Praneeth.gunti@gmail.com <br><strong>Country:</strong> India</p>
+  <!-- <strong>Phone:  </strong> +917093374197 <br> -->
+  <div class="bottom-container">
+    <a class="footer-link" href="https://app.codesignal.com/profile/praneeth_g4/">CodeSignal</a>
+    <a class="footer-link" href="https://twitter.com/PRANEET68049203/">Twitter</a>
+    <a class="footer-link" href="https://www.facebook.com/praneeth.gunti/">Facebook</a>
+    <a class="footer-link" href="https://github.com/praneeth-gunti/">GitHub</a>
+    <a class="footer-link" href="https://www.hackerrank.com/praneeth_gunti/">HackerRank</a>
+    <p class="copy_right">© 2020 All rights reserved. Praneeth Gunti.</p>
+  </div>
+</body>
+
 </html>

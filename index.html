@@ -1,77 +1,130 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Praneeth. G</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="header">
-      <strong>
-        <a class="header-link" href="index.html">About</a>
-        <a class="header-link" href="hobbies.html">Hobbies</a>
-        <a class="header-link" href="">Gallery</a>
-        <a class="header-link" href="">Play Games</a>
-        <a class="header-link" href="">Projects</a>
-        <a class="header-link" href="details.html">Message</a>
-      </strong>
+
+<head>
+  <meta charset="utf-8">
+  <title>Praneeth. G</title>
+
+  <!-- Icon and font styles -->
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap and CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Java script -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="body">
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="navigation">
+    <a class="navbar-brand" href="index.html">Jaan</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        <!-- <i class="fa fa-list" aria-hidden="true"></i> -->
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hobbies.html">Hobbies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Projects</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Play Games</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="projects\Simon\index.html">Simon</a>
+            <a class="dropdown-item" href="projects\Drum Kit\index.html">Drum Kit</a>
+            <a class="dropdown-item" href="projects\Dicee Challenge\dicee.html">Dice game</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="details.html">Message</a>
+        </li>
+      </ul>
     </div>
+  </nav>
 
-    <div class="topContainer">
-      <img class="top_cloud"src="images/cloud.svg" alt="cloud">
-      <h1>I'm Praneeth</h1>
-      <h2>a <span class="pro">Pro</span>grammer</h2>
-      <img class="bottom_cloud"src="images/cloud.svg" alt="cloud">
-      <img src="images/cover.svg" alt="mountain">
+  <div class="topContainer">
+    <img class="top_cloud" src="images/cloud.svg" alt="cloud">
+    <h1>I'm Praneeth</h1>
+    <h2>a <span class="pro">Pro</span>grammer</h2>
+    <img class="bottom_cloud" src="images/cloud.svg" alt="cloud">
+    <img class="cover_img" src="images/cover.svg" alt="mountain">
+  </div>
+
+  <div class="middle-container">
+    <div class="profile">
+      <img class="profile_pic" src="images/man.svg" alt="">
+      <h2>Hello!</h2>
+      <p class="Bio">I am pursuing my Masters degree in Cyber Security and I love💘 to code.</p>
     </div>
-
-    <div class="middle-container">
-      <div class="profile">
-        <img class="profile_pic"src="images/man.svg" alt="">
-        <h2>Hello!</h2>
-        <p class="Bio">I am pursuing my Masters degree in Cyber Security and I love💘 to code.</p>
+    <hr>
+    <div class="skills">
+      <h2>My Skills</h2>
+      <div class="skill-row">
+        <img class="computer_img" src="images/Web.svg" alt="">
+        <h3>Web Development</h3>
+        <p>Worked on various recent web technologies like HTML5, CSS, bootstrap4 and PHP at front end. On the other hand, technologies like JS, React etc on the backend.</p>
       </div>
-      <hr>
-      <div class="skills">
-        <h2>My Skills</h2>
-        <div class="skill-row">
-          <img class="computer_img" src="images/Web.svg" alt="">
-          <h3>Web Development</h3>
-          <p>Worked on various recent web technologies like HTML5, CSS, bootstrap4 and PHP at front end. On the other hand, technologies like JS, React etc on the backend.</p>
-        </div>
-        <div class="skill-row">
-          <img class="chilli_img" src="images/Web_development.svg" alt="No Value">
-          <h3>Programming Languages</h3>
-          <p>I like to code in C and love💘 to code in JAVA and Python. I have build some of the games using Python and PyGame module, wanna have fun! <a style="margin:0" href="">click here</a>.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="About">
-        <h2>About me</h2>
-        <p>Highly-motivated M.Tech pursuing graduate with experienced team environment. Seeking an opportunity to
-leverage my talents and technical expertise to achieve the challenging goals.</p>
-
-      </div>
-      <hr>
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <h3>If you are intrested in coding as much as I do.</h3>
-        <p class="contact-des">C'mon lets catchup and work on realtime projects as well as have lots of fun. What are you waiting for!!!</p>
-        <a class="button" href="mailto:praneeth.gunti@email.com">CONTACT ME</a>
+      <div class="skill-row">
+        <img class="chilli_img" src="images/Web_development.svg" alt="No Value">
+        <h3>Programming Languages</h3>
+        <p>I like to code in C and love💘 to code in JAVA and Python. I have build some of the games using Python and PyGame module, wanna have fun! <a style="margin:0" href="">click here</a>.</p>
       </div>
     </div>
+    <hr>
+    <div class="About">
+      <h2>About me</h2>
+      <p>Highly-motivated M.Tech pursuing graduate with experienced team environment. Seeking an opportunity to
+        leverage my talents and technical expertise to achieve the challenging goals.</p>
 
-
-    <div class="bottom-container">
-      <a class="footer-link" href="https://app.codesignal.com/profile/praneeth_g4/">CodeSignal</a>
-      <a class="footer-link" href="https://twitter.com/PRANEET68049203/">Twitter</a>
-      <a class="footer-link" href="https://www.facebook.com/praneeth.gunti/">Facebook</a>
-      <a class="footer-link" href="https://github.com/praneeth-gunti/">GitHub</a>
-      <a class="footer-link" href="https://www.hackerrank.com/praneeth_gunti/">HackerRank</a>
-      <p class="copy_right">© 2020 All rights reserved. Praneeth Gunti.</p>
     </div>
+    <hr>
+    <div class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3>If you are intrested in coding as much as I do.</h3>
+      <p class="contact-des">C'mon lets catchup and work on realtime projects as well as have lots of fun. What are you waiting for!!!</p>
+      <a class="button" href="mailto:praneeth.gunti@email.com">CONTACT ME</a>
+    </div>
+  </div>
 
-  </body>
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://app.codesignal.com/profile/praneeth_g4/">CodeSignal</a>
+    <a class="footer-link" href="https://twitter.com/PRANEET68049203/">Twitter</a>
+    <a class="footer-link" href="https://www.facebook.com/praneeth.gunti/">Facebook</a>
+    <a class="footer-link" href="https://github.com/praneeth-gunti/">GitHub</a>
+    <a class="footer-link" href="https://www.hackerrank.com/praneeth_gunti/">HackerRank</a>
+    <p class="copy_right">© 2020 All rights reserved. Praneeth Gunti.</p>
+  </div>
+
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navigation").style.top = "0";
+      } else {
+        document.getElementById("navigation").style.top = "-20%";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
+
+</body>
+
 </html>

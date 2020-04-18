@@ -6,10 +6,12 @@ body{
 }
 h1{
   color: #66BFBF;
-  font-size: 5rem;
+  font-size: 500%;
   font-family: 'Sacramento', cursive;
+  font-weight: bold;
   margin: 50 auto 0 auto;
 }
+
 h2{
   color: #11999E;
   font-size: 1.5rem;
@@ -29,6 +31,61 @@ a{
 }
 a:hover{
   color: #EAF6F6;
+
+}
+
+.navbar-light{
+  background-color: #EAF6F6;
+}
+
+@media screen and (min-width: 990px) {
+  #navigation {
+    background-color: #EAF6F6;
+    padding: 1.5%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+  }
+
+  #navigation a {
+    float: left;
+    display: block;
+    color: #11999E;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  #navigation a:hover{
+    color: #000;
+  }
+}
+
+@media screen and (max-width:990px){
+  .cover_img{
+    width:100%;
+  }
+  #navigation a{
+    color: #11999E;
+  }
+  #navigation a:hover{
+    color: #000;
+  }
+}
+
+
+div.dropdown-menu{
+  background-color: #EAF6F6;
+  border: 0;
+}
+a.dropdown-item{
+  margin:auto;
+  text-align: center;
+}
+a.dropdown-item: hover{
+  background-color: #EAF6F6;
 }
 p{
   line-height: 2;
@@ -72,7 +129,7 @@ input[type=submit] {
   background-color: #EAF6F6;
   /* background-color: #d6ded7; */
   position: relative;
-  padding-top: 100px;
+  padding-top: 18%;
 }
 .middle-container{
   margin : 100px auto;
@@ -81,10 +138,7 @@ input[type=submit] {
   background-color: #66BFBF;
   padding: 50px 0 20px;
 }
-.header{
-  background-color: #66BFBF;
-  padding: 50px;
-}
+
 .Bio{
   width : 30%;
   margin : auto;
@@ -97,13 +151,14 @@ input[type=submit] {
 }
 .top_cloud{
   position: absolute;
-  right: 300px;
-  top : 40px;
+  left: 70%;
+  top: 25%;
 }
+
 .bottom_cloud{
   position: absolute;
-  left: 250px;
-  bottom: 300px;
+    bottom: 43%;
+    left: 15%;
 }
 .pro{
   text-decoration: underline;
